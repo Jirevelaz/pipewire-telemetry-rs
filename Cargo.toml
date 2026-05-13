@@ -1,0 +1,14 @@
+[package]
+name = "pipewire-telemetry-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# El runtime asíncrono para el cliente final
+tokio = { version = "1.0", features = ["full"] }
+
+# El puente lock-free SPSC (Single-Producer Single-Consumer)
+rtrb = "0.3"
+
+# Manejo de errores simplificado
+anyhow = "1.0"
